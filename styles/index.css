@@ -1,0 +1,9 @@
+@import './fonts.css';
+@import './theme.css';
+@import './tailwind.css';
+
+body, html, #root {
+  background: linear-gradient(135deg, #FFD1DC 0%, #FFE3E9 50%, #FFF5F7 100%) !important;
+  min-height: 100vh;
+}
+
