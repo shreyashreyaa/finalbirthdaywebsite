@@ -7,7 +7,7 @@ const songs = [
   {
     id: 1,
     title: 'Your eyes tell',
-    artist: ''
+    artist: 'BTS',
     url: 'https://raw.githubusercontent.com/shreyashreyaa/music/main/BTS%20-%20Your%20Eyes%20Tell.mp3',
     whyThisSong: 'Why are my eyes filled with tears? Hey, stay by my side and laugh (the WHOLE song represents my emotions for you)',
   },
