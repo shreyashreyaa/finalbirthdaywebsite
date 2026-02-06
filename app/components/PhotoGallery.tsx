@@ -3,17 +3,20 @@ import { motion, AnimatePresence } from 'motion/react';
 import { X } from 'lucide-react';
 
 // REPLACE IMAGE - Add your image URLs here
+const base = import.meta.env.BASE_URL;
+
 const photos = [
-  { id: 1, url: '/WhatsApp%20Image%202026-02-02%20at%201.46.26%20AM.jpeg', memory: 'A wonderful memory together 💕' },
-  { id: 2, url: '/WhatsApp%20Image%202026-02-05%20at%2011.57.27%20PM.jpeg', memory: 'Beautiful moments we share 💫' },
-  { id: 3, url: '/WhatsApp%20Image%202026-02-05%20at%2011.57.28%20PM.jpeg', memory: 'Cherishing every second with you 🌸' },
-  { id: 4, url: '/WhatsApp%20Image%202026-02-05%20at%2011.57.58%20PM.jpeg', memory: 'You make my world brighter 🌟' },
-  { id: 5, url: '/WhatsApp%20Image%202026-02-05%20at%2011.59.12%20PM.jpeg', memory: 'Forever grateful for you 💖' },
-  { id: 6, url: '/WhatsApp%20Image%202026-02-05%20at%2011.59.13%20PM%20(1).jpeg', memory: 'Adventures with you are the best 🎉' },
-  { id: 7, url: '/WhatsApp%20Image%202026-02-05%20at%2011.59.13%20PM.jpeg', memory: 'In my heart, always and forever 💝' },
-  { id: 8, url: '/WhatsApp%20Image%202026-02-06%20at%2012.04.10%20AM.jpeg', memory: 'Every moment with you is precious ✨' },
-  { id: 9, url: '/WhatsApp%20Image%202026-02-06%20at%2012.04.11%20AM.jpeg', memory: 'You are my greatest blessing 🌹' },
+  { id: 1, url: `${base}photo1.jpeg`, memory: 'A wonderful memory together 💕' },
+  { id: 2, url: `${base}photo2.jpeg`, memory: 'Beautiful moments we share 💫' },
+  { id: 3, url: `${base}photo3.jpeg`, memory: 'Cherishing every second with you 🌸' },
+  { id: 4, url: `${base}photo4.jpeg`, memory: 'You make my world brighter 🌟' },
+  { id: 5, url: `${base}photo5.jpeg`, memory: 'Forever grateful for you 💖' },
+  { id: 6, url: `${base}photo6.jpeg`, memory: 'Adventures with you are the best 🎉' },
+  { id: 7, url: `${base}photo7.jpeg`, memory: 'In my heart, always and forever 💝' },
+  { id: 8, url: `${base}photo8.jpeg`, memory: 'Every moment with you is precious ✨' },
+  { id: 9, url: `${base}photo9.jpeg`, memory: 'You are my greatest blessing 🌹' },
 ];
+
 
 export function PhotoGallery() {
   const [selectedPhoto, setSelectedPhoto] = useState<number | null>(null);
