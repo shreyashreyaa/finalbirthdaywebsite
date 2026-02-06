@@ -11,11 +11,11 @@ interface FloatingNote {
 
 // EDIT TEXT - Floating Notes Content
 const floatingNotes: FloatingNote[] = [
-  { id: 1, x: 10, y: 15, note: "You're the best friend anyone could ask for! 💕" },
-  { id: 2, x: 85, y: 25, note: "Your smile lights up my world! ✨" },
-  { id: 3, x: 20, y: 70, note: "So grateful for all our memories together! 🌸" },
-  { id: 4, x: 75, y: 60, note: "You make every day brighter! ☀️" },
-  { id: 5, x: 50, y: 40, note: "Thank you for always being there! 💖" },
+  { id: 1, x: 10, y: 15, note: "oh to look like you" },
+  { id: 2, x: 85, y: 25, note: "YOU are the moment, YOU are the main character. CRUSH IT" },
+  { id: 3, x: 20, y: 70, note: "love you so MUCH" },
+  { id: 4, x: 75, y: 60, note: "tum meri sabse favorite ladies ho" },
+  { id: 5, x: 50, y: 40, note: "literallytheprettiestinsideout (said with no breath in between im that serious)" },
 ];
 
 export function FloatingElements() {

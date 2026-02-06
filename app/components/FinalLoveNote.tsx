@@ -1,18 +1,18 @@
 import { motion } from 'motion/react';
 
 // EDIT TEXT - Final love note
-const LOVE_NOTE = `Dear Best Friend,
+const LOVE_NOTE = `to manasvi, my kajukatli,
 
-As this special day comes to an end, I want you to know how incredibly grateful I am to have you in my life. You are not just my best friend - you are my confidant, my partner in crime, my shoulder to cry on, and my biggest cheerleader.
+omg i never thought i could do this after such a long time, but here i am. i hope you had a nice birthday even if i couldnt do much, but i promise to make all the days of your remaining life special, atleast till im alive, and if my some reason we arent together.... thats another day to talk about.
+but the main thing is, i really want you to know that YOU ARE SO LOVED and i want hug you the whole day(even if i dont when we meet but respect my vision). AAH i forgot how i used tto express my feeling thru my words but ill try
+i hope you know how much i love you, and how much you mean to me, and how much i care for you. you are the most precious person in my life, and i want to see you happy every single day. i want to be there for you in every moment, in every laugh, in every tear, in every success, in every failure. i want to be your support system, your best friend, your partner in crime, your everything.
+i hope you have the best year ahead, filled with love, joy, success, and all the things you deserve. i hope you achieve all your dreams and goals, and i will be there cheering for you every step of the way. i hope we can create many more beautiful memories together, and that our love continues to grow stronger with each passing day.
+thank you for being the amazing person you are, and for loving me the way you do. i am so grateful to have you in my life, and i promise to cherish and love you forever. i just hope you know how emmensely proud im am of you, and KNOW that if you think no ones cheering for you, look at me. even if im in the last aisle and not visible, youll hear my shouts. ill always remind you of how much of a nice person you are
+and that you deserve the whole world. i hope you credit yourself and praise yourselve a bit for your hardwork and dedication. i hope you dont mind much of your parents words, because i want you to focus on yourself. do not ever lose trust on yourself and do not ever lose yourself. the day you lose my manasvi, you lose your shreya. so, being the manasvi you are- strong, mindful, beautiful, optimistic, kind, caring, loving, and all the things that make you the best- please take care of yourself, and love yourself as much as i do. because you are worth it, and you deserve it.
+i think im repeating my words but i just want to make sure you know how much i love you, and how much you mean to me. you are my everything, and i will always be there for you, no matter what. happy birthday, my love. may this year be the best one yet, and may we continue to create beautiful memories together. i love you more than words can express, and i always will.❤️.
 
-Thank you for being exactly who you are. Thank you for all the laughter, the tears, the adventures, and the quiet moments. Thank you for accepting me with all my flaws and loving me unconditionally.
-
-I hope this birthday was as special as you are. You deserve all the happiness, love, and success in the world. Here's to many more years of friendship, memories, and growing old together!
-
-I love you more than words can express. Happy Birthday, my dear friend! 🎂💕
-
-Forever and always,
-Your Best Friend ✨`;
+from me,
+your rasmalai`;
 
 export function FinalLoveNote() {
   return (

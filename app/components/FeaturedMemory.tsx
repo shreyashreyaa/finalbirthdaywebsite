@@ -1,11 +1,11 @@
 import { motion } from 'motion/react';
 // import birthdayFrame from 'figma:asset/bfdd30c3554d94566a5fcb980ddc5b9c90da2d08.png';
 
-// REPLACE IMAGE - Featured photo URL
-const FEATURED_PHOTO_URL = 'https://images.unsplash.com/photo-1513151233558-d860c5398176?w=800&h=600&fit=crop';
+// REPLACE IMAGE - Featured photo URL (place the image at public/background/featured-memory.png)
+const FEATURED_PHOTO_URL = '/background/featured-memory.png';
 
 // EDIT TEXT - Caption
-const CAPTION = 'i HOPE you spend your BIRTHDAY HAPPiLY';
+const CAPTION = 'happy birthday to the most beautiful soul i have ever met. manasvi, you are so special and lovely and warm and i just cannot believe i got lucky enough to have you. i mean you are a literal blessing, you\'ve saved me more times than i can count and for that i\'m eternally grateful, you\'ve taught me so many things and i would be totally lost without you, you are the sunshine and life tastes sweeter with you. thank you for being with me. i love you more than words could ever do justice';
 
 export function FeaturedMemory() {
   return (
@@ -42,13 +42,6 @@ export function FeaturedMemory() {
                   className="w-full h-auto object-cover"
                 />
                 {/* Scrapbook decorative overlays */}
-                <div className="absolute top-4 left-4">
-                  <div className="bg-pink-400 text-white px-4 py-2 rounded-lg shadow-lg transform -rotate-3">
-                    <span className="text-xl" style={{ fontFamily: 'Pacifico, cursive' }}>
-                      BiRTH DAY
-                    </span>
-                  </div>
-                </div>
                 <div className="absolute top-4 right-4">
                   <div className="bg-white px-3 py-2 rounded-lg shadow-lg transform rotate-6">
                     <span className="text-pink-600" style={{ fontFamily: 'Quicksand, sans-serif' }}>

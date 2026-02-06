@@ -18,6 +18,13 @@ export default function App() {
     document.documentElement.style.scrollBehavior = 'smooth';
   }, []);
 
+  useEffect(() => {
+    try {
+      const unlocked = sessionStorage.getItem('site-unlocked');
+      if (unlocked === '1') setIsUnlocked(true);
+    } catch (e) {}
+  }, []);
+
   const handleUnlock = () => {
     setIsUnlocked(true);
     // Smooth scroll to next section after unlock
@@ -29,8 +36,10 @@ export default function App() {
   return (
     <div className="relative min-h-screen w-screen" style={{ 
       fontFamily: 'Quicksand, sans-serif',
-      background: 'linear-gradient(135deg, #FFD1DC 0%, #FFE3E9 50%, #FFF5F7 100%)',
-      backgroundAttachment: 'fixed'
+      backgroundImage: 'url(/background/stars-grid.png)',
+      backgroundSize: 'cover',
+      backgroundAttachment: 'fixed',
+      backgroundPosition: 'center',
     }}>
       {/* Floating decorative elements */}
       <FloatingElements />

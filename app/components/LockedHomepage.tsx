@@ -10,28 +10,88 @@ interface LockedHomepageProps {
 }
 
 // EDIT TEXT - Passcode value
-const CORRECT_PASSCODE = '1234';
+// Set the site password via Vite env variable `VITE_SITE_PASSWORD`.
+// Fallback to '134340' only when the env var is not provided.
+const CORRECT_PASSCODE = (import.meta.env.VITE_SITE_PASSWORD ?? '134340') as string;
 
 // CHANGE SONG - Replace with your audio file URL
-const SONG_URL = 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3';
+const SONG_URL = 'https://raw.githubusercontent.com/shreyashreyaa/music/main/BTS%20Friends.mp3';
 
 // EDIT TEXT - Song lyrics
-const LYRICS = `Every moment with you
-Is a treasure I hold dear
-Your laughter fills my heart
-And wipes away each tear
+const LYRICS = `Seoul that used to be so unusually sparkling
+Was another new world to me
+I met you when you were clammy with sweat
+A somewhat strange kid
 
-Happy birthday my dear friend
-May your dreams never end
-You're the light in my life
-Forever by my side`;
+Me from the moon, you from the stars
+Our conversations were like homework
+BFFs on one day, enemies on another
+I just wanna understand
+
+Hello, my alien
+We are each other's mystery (Yeah, yeah)
+Is that why it's even more special (Oh)
+
+One day when this cheer dies down, stay, hey
+Stay by my side
+For eternity, keep staying here, stay, hey
+Like your tiny pinky
+
+Longer than seven summers and cold winters
+Longer than numerous promises and memories
+
+I remember our uniforms
+Our memories are movies
+The dumpling incident is a comedy movie yeah, yeah
+
+Heartfelt stories filling the school bus
+Now we go out to drive together
+Still the same, us of those days
+"Hey Jimin, today"
+
+The dreamcatcher in my room
+7-year-long history
+Is that why it's even more special
+
+One day when this cheer dies down, stay, hey
+Stay by my side
+For eternity, keep staying here, stay, hey
+Like your tiny pinky
+
+Longer than seven summers and cold winters
+Longer than numerous promises and memories
+
+Like your pinky
+We are still the same
+I know everything about you
+We gotta trust each other
+Never forgot
+More than the plain thank you
+You and me
+Decided not to fight tomorrow for real
+
+One day when this cheer dies down, stay, hey
+You are my soulmate
+For eternity, keep staying here, stay, hey
+You are my soulmate
+
+Longer than seven summers and cold winters
+Longer than numerous promises and memories
+
+One day when this cheer dies down, stay, hey
+You are my soulmate
+For eternity, keep staying here, stay, hey
+You are my soulmate
+
+Longer than seven summers and cold winters
+Longer than numerous promises and memories`;
 
 // REPLACE IMAGE - Polaroid photos
 const polaroidPhotos = [
-  { url: 'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=400&h=500&fit=crop', rotation: -5, x: 10, y: 20 },
-  { url: 'https://images.unsplash.com/photo-1532635249-c32c868e6f0e?w=400&h=500&fit=crop', rotation: 7, x: 70, y: 15 },
-  { url: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=400&h=500&fit=crop', rotation: -3, x: 15, y: 65 },
-  { url: 'https://images.unsplash.com/photo-1499887142886-791eca5918cd?w=400&h=500&fit=crop', rotation: 5, x: 75, y: 70 },
+  { url: '/WhatsApp%20Image%202026-02-02%20at%201.46.26%20AM.jpeg', rotation: -5, x: 10, y: 20 },
+  { url: '/WhatsApp%20Image%202026-02-05%20at%2011.57.27%20PM.jpeg', rotation: 7, x: 70, y: 15 },
+  { url: '/WhatsApp%20Image%202026-02-05%20at%2011.57.28%20PM.jpeg', rotation: -3, x: 15, y: 65 },
+  { url: '/WhatsApp%20Image%202026-02-05%20at%2011.57.58%20PM.jpeg', rotation: 5, x: 75, y: 70 },
 ];
 
 export function LockedHomepage({ onUnlock }: LockedHomepageProps) {
@@ -68,6 +128,8 @@ export function LockedHomepage({ onUnlock }: LockedHomepageProps) {
 
   const handlePasscodeSubmit = () => {
     if (passcode === CORRECT_PASSCODE) {
+      // persist unlocked state for this session so friend doesn't need to re-enter
+      try { sessionStorage.setItem('site-unlocked', '1'); } catch (e) {}
       onUnlock();
     } else {
       setError(true);
@@ -159,7 +221,7 @@ export function LockedHomepage({ onUnlock }: LockedHomepageProps) {
           Happy Birthday!
         </h1>
         <p className="text-center text-gray-600 mb-6" style={{ fontFamily: 'Quicksand, sans-serif' }}>
-          Enter the passcode to unlock your surprise 💕
+          enter the password to enter ehe (hint : 6 digit password )
         </p>
 
         {/* Passcode Input */}
@@ -175,7 +237,7 @@ export function LockedHomepage({ onUnlock }: LockedHomepageProps) {
           />
           {error && (
             <p className="text-red-500 text-center mt-2 text-sm">
-              Oops! Try again 🌸
+              Try again hehe 
             </p>
           )}
         </div>
@@ -200,7 +262,7 @@ export function LockedHomepage({ onUnlock }: LockedHomepageProps) {
             <div className="flex-1">
               <p className="text-sm text-gray-700 mb-1" style={{ fontFamily: 'Quicksand, sans-serif' }}>
                 {/* EDIT TEXT - Song title */}
-                Birthday Song for You 🎵
+                FRIENDS
               </p>
               <div
                 className="w-full bg-pink-200 rounded-full h-2 cursor-pointer"

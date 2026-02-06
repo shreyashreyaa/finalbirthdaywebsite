@@ -2,9 +2,6 @@ import { useState, useEffect, useRef } from 'react';
 import { motion } from 'motion/react';
 import { Sparkles } from 'lucide-react';
 
-// REPLACE IMAGE - Sunflower bouquet
-const SUNFLOWER_IMAGE = 'https://images.unsplash.com/photo-1597848212624-e530bb12e2e2?w=600&h=400&fit=crop';
-
 interface CakeConfig {
   bottomColor: string;
   topColor: string;
@@ -81,36 +78,6 @@ export function FlowersAndCake() {
   return (
     <section className="min-h-screen py-20 px-4">
       <div className="max-w-6xl mx-auto">
-        {/* Flowers Section - REPLACE IMAGE at SUNFLOWER_IMAGE variable */}
-        <motion.div
-          className="mb-16 text-center"
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-        >
-          <h2 className="text-4xl mb-8 text-gray-800" style={{ fontFamily: 'Pacifico, cursive' }}>
-            For You 🌻
-          </h2>
-          <motion.div
-            className="inline-block"
-            animate={{ rotate: [0, 2, -2, 0] }}
-            transition={{ duration: 3, repeat: Infinity }}
-          >
-            <div className="relative">
-              <motion.div
-                className="absolute inset-0 bg-yellow-300 rounded-full blur-2xl opacity-30"
-                animate={{ scale: [1, 1.2, 1] }}
-                transition={{ duration: 2, repeat: Infinity }}
-              />
-              <img
-                src={SUNFLOWER_IMAGE}
-                alt="Sunflower Bouquet"
-                className="relative rounded-3xl shadow-2xl w-full max-w-md mx-auto"
-              />
-            </div>
-          </motion.div>
-        </motion.div>
-
         {/* Cake Section */}
         <motion.div
           className="bg-white rounded-3xl shadow-2xl p-8 md:p-12"

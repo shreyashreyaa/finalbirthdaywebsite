@@ -162,7 +162,8 @@ export function BreathingExercise() {
             animate={{ opacity: 1 }}
             transition={{ delay: 1 }}
           >
-            Remember, you're stronger than you think. I believe in you! 💪✨
+            breathe in the flowers, blow out the candles. 
+            trust me, its going to be okay. Do not overthink. I love youuu
           </motion.p>
         </motion.div>
       </div>
